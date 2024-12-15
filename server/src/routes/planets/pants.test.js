@@ -7,5 +7,5 @@ describe("Test GET /planets", () => {
       .get("/v1/planets")
       .expect("Content-Type", /json/)
       .expect(200);
-  }, 30000); // 30 seconds timeout for this test
+  }, 10000); // 30 seconds timeout for this test
 });
